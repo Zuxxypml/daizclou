@@ -35,7 +35,7 @@ h6 {
   padding: 14px 30px;
   border-radius: 200px;
   transition: 0.5s;
-  margin-top: 30px;
+  margin-top: 20px;
   color: #fff;
   background-color: #8d4ecc;
   cursor: pointer !important;
@@ -286,7 +286,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #2c4964;
+  color: #000;
 }
 
 .navbar-mobile a:hover:before,
@@ -298,13 +298,13 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #5846f9;
+  color: #8d4ecc;
 }
 
 /*  Hero Section  */
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 20vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
@@ -362,7 +362,7 @@ h6 {
 
 @media (max-width: 575px), (max-height: 600px) {
   #hero {
-    height: auto;
+    height: 20px;
   }
 }
 
@@ -393,47 +393,11 @@ section {
   margin-bottom: 0;
 }
 
-/*   Values   */
-.values {
-  padding: 120px 0;
-  position: relative;
-}
-.values .value-container {
-  padding: 50px 30px;
-  width: 90% !important;
-  height: auto;
-  position: absolute;
-  margin: 0px auto;
-  top: -65px;
-  left: 0px;
-  right: 0px;
-  z-index: 16;
-  background: #ffffff;
-  box-shadow: 0px 4px 20px rgba(141, 78, 204, 0.1);
-  border-radius: 5px;
-}
-.values .value-title h3 {
-  font-weight: 600;
-  font-size: 32px;
-  color: #000;
-}
-.values .value-title p {
-  font-size: 14.5px;
-}
-.values .row {
-  margin: 0 auto !important;
-}
-.values .row .value-box h4 {
-  font-weight: 700;
-}
-.values .row .value-box p {
-  font-size: 14.5px;
-}
-
 /*   About    */
-#about {
+#about-us {
   background-color: #f9f6fc;
-  padding: 90px 10px;
+  padding: 90px 0px;
+  position: relative;
 }
 .about .about-service-wrapper .about-service {
   padding: 20px 0px;
@@ -453,6 +417,40 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.about .our-mission-container {
+  /* overflow: hidden; */
+  width: 100%;
+  position: relative;
+}
+
+.about .our-mission-container .our-mission-text-container h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+.about .our-mission-container .our-mission-text-container p {
+  opacity: 0.9;
+}
+@media screen and (max-width: 678px) {
+  .about .our-mission-container {
+    /* overflow: hidden; */
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .about .our-mission-container {
+    width: 100%;
+    position: relative;
+    padding: 0px 10px;
+  }
+  .about .our-mission-container .our-mission-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .about .our-mission-container .our-mission-img-container img {
+    width: 100% !important;
+  }
 }
 
 /* Services  */
@@ -482,71 +480,8 @@ section {
   margin-bottom: 8px;
   margin: 0px;
 }
-
-/* Portfolio  */
-#portfolio {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-color: #f7f7f7;
-}
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
-/* Blogs  */
-#blogs {
-  padding: 110px 10px;
-}
-.blogs .container .blogs-wrapper .blog-card {
-  box-sizing: border-box;
-  border-radius: 12px;
-  border: 1px solid #84818e;
-  min-height: max-content;
-}
-.blogs .container .blogs-wrapper .blog-card:hover {
-  border: none;
-  cursor: pointer;
-}
-.blogs .container .blogs-wrapper .blog-card:hover h3 {
-  text-decoration: underline;
-}
-.blogs .container .blogs-wrapper .blog-card:hover a {
-  text-decoration: none;
-}
-.blogs .container .blogs-wrapper .blog-card .card-img-container {
-  width: 100%;
-}
-.blogs .container .blogs-wrapper .blog-card .card-img-container {
-  width: 100%;
-}
-.blogs .container .blogs-wrapper .blog-card .blog-tag {
-  width: 100px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  color: #eb4335;
-  padding: 8px 0px;
-  background: #fdeceb;
-  border-radius: 30px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-.blogs .container .blogs-wrapper .blog-card h3.blog-title {
-  color: #464255;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
-  margin-left: 20px;
-}
-.blogs .container .blogs-wrapper .blog-card p {
-  margin-left: 20px;
-}
-.blogs .container .blogs-wrapper .blog-card p.blog-info {
-  font-style: 16px;
-}
-.blogs .container .blogs-wrapper .blog-card p a {
-  text-decoration: underline;
+.services .service-wrapper .service-item ul li {
+  opacity: 0.8;
 }
 
 /* Hire us Section  */
