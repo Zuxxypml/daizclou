@@ -38,6 +38,12 @@ h6 {
   margin-top: 30px;
   color: #fff;
   background-color: #8d4ecc;
+  cursor: pointer !important;
+  pointer-events: all;
+}
+.daiz-btn:hover {
+  color: #8d4ecc;
+  background-color: #fff;
 }
 /* Back to top  */
 .back-to-top {
@@ -197,10 +203,10 @@ h6 {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 4px;
   bottom: -5px;
   left: 0;
-  background-color: #fff;
+  background-color: #7b27d8;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -303,7 +309,7 @@ h6 {
     url("../img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -12 !important;
+  z-index: 1 !important;
 }
 
 #hero .container,
@@ -323,25 +329,6 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
   margin: 10px 0 0 0;
   font-size: 20px;
-}
-
-#hero .work-with-us-btn {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 14px 30px;
-  border-radius: 200px;
-  transition: 0.5s;
-  margin-top: 30px;
-  color: #fff;
-  background-color: #8d4ecc;
-}
-
-#hero .work-with-us-btn:hover {
-  background: #fff;
-  color: #8d4ecc;
 }
 
 @media (min-width: 1200px) {
@@ -479,11 +466,16 @@ section {
   align-items: flex-start;
   padding: 20px 40px;
   gap: 8px;
-  background-color: #fff;
   background: #ffffff;
   box-shadow: 0px 4px 17px rgba(141, 78, 204, 0.06),
     inset 0px 4px 4px rgba(0, 0, 0, 0.11);
   border-radius: 10px;
+}
+.services .service-wrapper .service-item:hover {
+  background: #7b27d8;
+  color: #fff;
+  transition: 0.8s;
+  animation: transition 2s ease-in;
 }
 .services .service-wrapper .service-item h2 {
   font-weight: 700;
@@ -510,6 +502,16 @@ section {
   border-radius: 12px;
   border: 1px solid #84818e;
   min-height: max-content;
+}
+.blogs .container .blogs-wrapper .blog-card:hover {
+  border: none;
+  cursor: pointer;
+}
+.blogs .container .blogs-wrapper .blog-card:hover h3 {
+  text-decoration: underline;
+}
+.blogs .container .blogs-wrapper .blog-card:hover a {
+  text-decoration: none;
 }
 .blogs .container .blogs-wrapper .blog-card .card-img-container {
   width: 100%;
@@ -601,4 +603,68 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Footer  */
+#footer {
+  padding: 0px 10px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #464255;
+  color: #fff;
+}
+.footer .footer-container {
+  margin: 0 auto;
+}
+.footer .footer-container .quick-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-container .quick-links li {
+  list-style: none;
+}
+.footer .footer-container .quick-links a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.footer .footer-container .quick-links a:hover {
+  color: #8d4ecc;
+}
+@media screen and (max-width: 678px) {
+  .footer .footer-container .quick-links {
+    flex-direction: column;
+  }
+}
+
+.footer .footer-container .daiz-socials {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+  padding: 10px 0px;
+  gap: 14px;
+}
+.footer .footer-container .daiz-socials a {
+  padding: 6px;
+  border-radius: 50px;
+  background-color: #fff;
+  transition: 0.6s;
+}
+.footer .footer-container .daiz-socials a:hover {
+  background-color: #e7e4fe;
+}
+.footer .footer-container .address-and-phone-info {
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .footer-container .address-and-phone-info p {
+  margin: 0px;
+}
+.footer .footer-container p:last-child {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
 }

@@ -179,4 +179,8 @@
   console.log(valueContainer.style);
   let absoluteHeight = document.getElementById("value-container").scrollHeight;
   valueContainer.style.height = absoluteHeight + 10 + "px";
+
+  // Gets Current Year
+  let currentYear = new Date().getFullYear();
+  document.querySelector(".currentYear").innerHTML = currentYear;
 })();
