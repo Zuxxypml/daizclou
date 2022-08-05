@@ -1,4 +1,27 @@
 /* General  */
+:root {
+  /* Colors  */
+  --text-color: #000;
+  --dark-bg: #fff;
+  --secondary-dark-bg: #fff;
+  --about-us-bg: #f9f6fc;
+  --about-us-h3: #181818;
+  --about-us-p: #777777;
+  --portfolio-bg: #f7f7f7;
+  --blog-title: #464255;
+  --hireus-bg: #f9f6fc;
+}
+body.dark {
+  --text-color: #fff;
+  --dark-bg: #464255;
+  --secondary-dark-bg: #625e6e;
+  --about-us-bg: #625e6e;
+  --about-us-h3: #fff;
+  --about-us-p: #fff;
+  --portfolio-bg: #625e6e;
+  --blog-title: #fff;
+  --hireus-bg: #625e6e;
+}
 body {
   font-family: "DM Sans";
   color: #444444;
@@ -40,6 +63,7 @@ h6 {
   background-color: #8d4ecc;
   cursor: pointer !important;
   pointer-events: all;
+  border: none;
 }
 .daiz-btn:hover {
   color: #8d4ecc;
@@ -417,6 +441,8 @@ section {
 .values {
   padding: 120px 0;
   position: relative;
+  color: var(--text-color);
+  background-color: var(--dark-bg);
 }
 .values .value-container {
   padding: 50px 30px;
@@ -428,14 +454,14 @@ section {
   left: 0px;
   right: 0px;
   z-index: 16;
-  background: #ffffff;
+  background: var(--secondary-dark-bg);
   box-shadow: 0px 4px 20px rgba(141, 78, 204, 0.1);
   border-radius: 5px;
 }
 .values .value-title h3 {
   font-weight: 600;
   font-size: 32px;
-  color: #000;
+  color: var(--text-color);
 }
 .values .value-title p {
   font-size: 14.5px;
@@ -452,8 +478,9 @@ section {
 
 /*   About    */
 #about-us {
-  background-color: #f9f6fc;
+  background-color: var(--about-us-bg);
   padding: 90px 10px;
+  color: var(--text-color) !important;
 }
 .about .about-service-wrapper .about-service {
   padding: 20px 0px;
@@ -462,11 +489,11 @@ section {
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
-  color: #181818;
+  color: var(--about-us-h3);
   padding: 0px 10px;
 }
 .about .about-service-wrapper .about-service p {
-  color: #777777;
+  color: var(--about-us-p);
   padding: 0px 10px;
 }
 .about .about-service-wrapper .about-service-img {
@@ -478,6 +505,8 @@ section {
 /* Services  */
 #services {
   padding: 60px 10px;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
 }
 
 .services .service-wrapper .service-item {
@@ -486,7 +515,7 @@ section {
   align-items: flex-start;
   padding: 20px 40px;
   gap: 8px;
-  background: #ffffff;
+  background: var(--secondary-dark-bg);
   box-shadow: 0px 4px 17px rgba(141, 78, 204, 0.06),
     inset 0px 4px 4px rgba(0, 0, 0, 0.11);
   border-radius: 10px;
@@ -507,7 +536,8 @@ section {
 #portfolio {
   padding-top: 60px;
   padding-bottom: 40px;
-  background-color: #f7f7f7;
+  background-color: var(--portfolio-bg);
+  color: var(--text-color);
 }
 .portfolio .portfolio-item {
   position: relative;
@@ -562,6 +592,8 @@ section {
 /* Blogs  */
 #blogs {
   padding: 110px 10px;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
 }
 .blogs .container .blogs-wrapper .blog-card {
   box-sizing: border-box;
@@ -578,6 +610,7 @@ section {
 }
 .blogs .container .blogs-wrapper .blog-card:hover a {
   text-decoration: none;
+  color: var(--text-color);
 }
 .blogs .container .blogs-wrapper .blog-card .card-img-container {
   width: 100%;
@@ -599,7 +632,7 @@ section {
   cursor: pointer;
 }
 .blogs .container .blogs-wrapper .blog-card h3.blog-title {
-  color: #464255;
+  color: var(--blog-title);
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -613,11 +646,13 @@ section {
 }
 .blogs .container .blogs-wrapper .blog-card p a {
   text-decoration: underline;
+  color: var(--text-color);
 }
 
 /* Hire us Section  */
 #hireus {
-  background-color: #f9f6fc;
+  background-color: var(--hireus-bg);
+  color: var(--text-color);
   padding: 80px 10px;
 }
 .hireus .container {
@@ -641,22 +676,22 @@ section {
 
 .hireus .container .row .form-wrapper form input,
 .hireus .container .row .form-wrapper form textarea {
-  border: 1px solid #000;
+  border: 1px solid var(--text-color);
   background: none;
   width: 90%;
   border-radius: 5px;
   height: 42px;
-  color: white;
+  color: var(--text-color);
 }
 @media screen and (max-width: 678px) {
   .hireus .container .row .form-wrapper form input,
   .hireus .container .row .form-wrapper form textarea {
-    border: 1px solid #000;
+    border: 1px solid var(--text-color);
     background: none;
     width: 100%;
     border-radius: 5px;
     height: 42px;
-    color: white;
+    color: var(--text-color);
   }
 }
 .hireus .container .row .form-wrapper form textarea {
@@ -741,4 +776,7 @@ section {
   width: auto;
   margin: 0 auto;
   text-align: center;
+}
+.footer button.daiz-btn {
+  border: none;
 }

@@ -43,7 +43,9 @@
                     <li><a class="nav-link scrollto " href="/index.html#portfolio">Portfolio</a></li>
                     <li><a class="nav-link scrollto" href="/index.html#blogs">Blog</a></li>
                     <li><a class="nav-link scrollto" href="/index.html#hireus">Contact us</a></li>
-                    <li><a class="nav-link scrollto" href="/index.html#shop">Shop</a></li>
+                    <li><a class="nav-link scrollto" type="button" data-bs-toggle="modal"
+                            data-bs-target="#shopModal">Shop</a>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -213,7 +215,8 @@
                 <!-- <a href=""><img src="img/icons/messenger.svg" alt="messenger" class="img-fluid w-100"></a> -->
                 <a href="https://m.facebook.com/DaizClou/" target="_blank"><img src="img/icons/facebook.svg"
                         alt="facebook" class="img-fluid w-100"></a>
-                <!-- <a href=""><img src="img/icons/instagram.svg" alt="instagram" class="img-fluid w-100"></a> -->
+                <a href="https://www.instagram.com/daizclou/" target="_blank"><img src="img/icons/instagram.svg"
+                        alt="instagram" class="img-fluid w-100"></a>
                 <a href="https://wa.me/+2347013214897" target="_blank"><img src="img/icons/whatsapp.svg" alt="whatsapp"
                         class="img-fluid w-100"></a>
                 <!-- <a href=""><img src="img/icons/linkedin.svg" alt="linkedin" class="img-fluid w-100"></a> -->
@@ -224,12 +227,30 @@
             <div class="address-and-phone-info my-2">
                 <p>55, Oke Ila Street, Ado Ekiti, Nigeria.</p>
                 <p>+234-701-321-4897</p>
+                <button class="daiz-btn mode-toggle">Change Mode</button>
             </div>
             <p>Copyright &copy; <span class="currentYear"></span>
                 DaizClou Technologies. All right reserved.
             </p>
         </div>
     </footer>
+ <!-- Modal  -->
+ <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="upcomingShopModal" aria-hidden="true">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="upcomingShopModal">DaizClou Shop</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 Coming soon...
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="daiz-btn" data-bs-dismiss="modal">Close</button>
+             </div>
+         </div>
+     </div>
+ </div>
     <!-- Back to top  -->
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -237,6 +258,12 @@
 <!-- Vendor JS Files -->
 <script src="vendor/aos/aos.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
 
 <!--  Main JS File -->
 <script src="js/about.js"></script>

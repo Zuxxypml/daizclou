@@ -1,4 +1,27 @@
 /* General  */
+:root {
+  /* Colors  */
+  --text-color: #000;
+  --dark-bg: #fff;
+  --secondary-dark-bg: #fff;
+  --about-us-bg: #f9f6fc;
+  --about-us-h3: #181818;
+  --about-us-p: #777777;
+  --portfolio-bg: #f7f7f7;
+  --blog-title: #464255;
+  --hireus-bg: #f9f6fc;
+}
+body.dark {
+  --text-color: #fff;
+  --dark-bg: #464255;
+  --secondary-dark-bg: #625e6e;
+  --about-us-bg: #625e6e;
+  --about-us-h3: #fff;
+  --about-us-p: #fff;
+  --portfolio-bg: #625e6e;
+  --blog-title: #fff;
+  --hireus-bg: #625e6e;
+}
 body {
   font-family: "DM Sans";
   color: #444444;
@@ -40,6 +63,7 @@ h6 {
   background-color: #8d4ecc;
   cursor: pointer !important;
   pointer-events: all;
+  border: none;
 }
 .daiz-btn:hover {
   color: #8d4ecc;
@@ -395,9 +419,9 @@ section {
 
 /*   About    */
 #about-us {
-  background-color: #f9f6fc;
-  padding: 90px 0px;
-  position: relative;
+  background-color: var(--about-us-bg);
+  padding: 90px 10px;
+  color: var(--text-color) !important;
 }
 .about .about-service-wrapper .about-service {
   padding: 20px 0px;
@@ -406,11 +430,11 @@ section {
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
-  color: #181818;
+  color: var(--about-us-h3);
   padding: 0px 10px;
 }
 .about .about-service-wrapper .about-service p {
-  color: #777777;
+  color: var(--about-us-p);
   padding: 0px 10px;
 }
 .about .about-service-wrapper .about-service-img {
@@ -418,6 +442,7 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 .about .our-mission-container {
   /* overflow: hidden; */
   width: 100%;
@@ -456,6 +481,8 @@ section {
 /* Services  */
 #services {
   padding: 60px 10px;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
 }
 
 .services .service-wrapper .service-item {
@@ -464,7 +491,7 @@ section {
   align-items: flex-start;
   padding: 20px 40px;
   gap: 8px;
-  background: #ffffff;
+  background: var(--secondary-dark-bg);
   box-shadow: 0px 4px 17px rgba(141, 78, 204, 0.06),
     inset 0px 4px 4px rgba(0, 0, 0, 0.11);
   border-radius: 10px;
@@ -480,13 +507,10 @@ section {
   margin-bottom: 8px;
   margin: 0px;
 }
-.services .service-wrapper .service-item ul li {
-  opacity: 0.8;
-}
-
 /* Hire us Section  */
 #hireus {
-  background-color: #f9f6fc;
+  background-color: var(--hireus-bg);
+  color: var(--text-color);
   padding: 80px 10px;
 }
 .hireus .container {
@@ -510,22 +534,22 @@ section {
 
 .hireus .container .row .form-wrapper form input,
 .hireus .container .row .form-wrapper form textarea {
-  border: 1px solid #000;
+  border: 1px solid var(--text-color);
   background: none;
   width: 90%;
   border-radius: 5px;
   height: 42px;
-  color: white;
+  color: var(--text-color);
 }
 @media screen and (max-width: 678px) {
   .hireus .container .row .form-wrapper form input,
   .hireus .container .row .form-wrapper form textarea {
-    border: 1px solid #000;
+    border: 1px solid var(--text-color);
     background: none;
     width: 100%;
     border-radius: 5px;
     height: 42px;
-    color: white;
+    color: var(--text-color);
   }
 }
 .hireus .container .row .form-wrapper form textarea {
@@ -608,4 +632,7 @@ section {
   width: auto;
   margin: 0 auto;
   text-align: center;
+}
+.footer button.daiz-btn {
+  border: none;
 }

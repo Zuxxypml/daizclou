@@ -9,7 +9,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.jpg" rel="icon">
+    <link href="/assets/img/favicon.jpg" rel="icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,9 @@
                     <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
                     <li><a class="nav-link scrollto" href="#blogs">Blog</a></li>
                     <li><a class="nav-link scrollto" href="#hireus">Contact us</a></li>
-                    <li><a class="nav-link scrollto" href="#shop">Shop</a></li>
+                    <li><a class="nav-link scrollto" type="button" data-bs-toggle="modal"
+                            data-bs-target="#shopModal">Shop</a>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -169,7 +171,8 @@
                         </p>
 
 
-                        <a href="" data-aos="fade-up" data-aos-delay="210" class="daiz-btn">Learn more</a>
+                        <a href="assets/about.html" data-aos="fade-up" data-aos-delay="210" class="daiz-btn">Learn
+                            more</a>
                     </div>
                     <div class="col-md-6 about-service-img order-1 order-lg-2">
                         <img src="assets/img/about-img.png" class="img-fluid w-75" data-aos="zoom-in"
@@ -226,6 +229,7 @@
             <div class=" container">
                 <div class="section-title">
                     <h2><span class="brand-color">Our</span> portfolio</h2>
+                    <p>Click or Hover to view projects information</p>
                 </div>
                 <div class="row mt-2 portfolio-wrapper text-center gap-5 justify-content-around">
                     <div class="col-md-3 portfolio-item"><img src="assets/img/portfolio/portfolio-1.png" alt=""
@@ -386,7 +390,8 @@
                 <!-- <a href=""><img src="assets/img/icons/messenger.svg" alt="messenger" class="img-fluid w-100"></a> -->
                 <a href="https://m.facebook.com/DaizClou/" target="_blank"><img src="assets/img/icons/facebook.svg"
                         alt="facebook" class="img-fluid w-100"></a>
-                <!-- <a href=""><img src="assets/img/icons/instagram.svg" alt="instagram" class="img-fluid w-100"></a> -->
+                <a href="https://www.instagram.com/daizclou/" target="_blank"><img src="assets/img/icons/instagram.svg"
+                        alt="instagram" class="img-fluid w-100"></a>
                 <a href="https://wa.me/+2347013214897" target="_blank"><img src="assets/img/icons/whatsapp.svg"
                         alt="whatsapp" class="img-fluid w-100"></a>
                 <!-- <a href=""><img src="assets/img/icons/linkedin.svg" alt="linkedin" class="img-fluid w-100"></a> -->
@@ -397,12 +402,30 @@
             <div class="address-and-phone-info my-2">
                 <p>55, Oke Ila Street, Ado Ekiti, Nigeria.</p>
                 <p>+234-701-321-4897</p>
+                <button class="daiz-btn mode-toggle">Change Mode</button>
             </div>
             <p>Copyright &copy; <span class="currentYear"></span>
                 DaizClou Technologies. All right reserved.
             </p>
         </div>
     </footer>
+    <!-- Modal  -->
+    <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="upcomingShopModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="upcomingShopModal">DaizClou Shop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Coming soon...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="daiz-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Back to top  -->
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -410,7 +433,12 @@
 <!-- Vendor JS Files -->
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
 <!--  Main JS File -->
 <script src="assets/js/index.js"></script>
 
