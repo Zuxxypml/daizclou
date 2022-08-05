@@ -45,6 +45,26 @@ h6 {
   color: #8d4ecc;
   background-color: #fff;
 }
+/* Daiz btn inverse  */
+.daiz-btn-inverse {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 200px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #8d4ecc;
+  background-color: #fff;
+  cursor: pointer !important;
+  pointer-events: all;
+}
+.daiz-btn-inverse:hover {
+  color: #fff;
+  background-color: #8d4ecc;
+}
 /* Back to top  */
 .back-to-top {
   position: fixed;
@@ -490,7 +510,53 @@ section {
   background-color: #f7f7f7;
 }
 .portfolio .portfolio-item {
+  position: relative;
   margin-bottom: 30px;
+  transition: 2s;
+}
+.portfolio .portfolio-item img {
+  width: 100%;
+}
+.portfolio .portfolio-item .portfolio-info {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #7b27d8;
+  color: #fff;
+  padding: 15px 10px;
+  width: 92%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 1s;
+}
+.portfolio .portfolio-item:hover .portfolio-info {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #7b27d8;
+  color: #fff;
+  padding: 15px 10px;
+  width: 92%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-info .portfolio-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 /* Blogs  */
@@ -641,16 +707,24 @@ section {
 
 .footer .footer-container .daiz-socials {
   display: flex;
-  width: max-content;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   padding: 10px 0px;
   gap: 14px;
 }
 .footer .footer-container .daiz-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 6px;
-  border-radius: 50px;
+  border-radius: 48px;
   background-color: #fff;
   transition: 0.6s;
+}
+.footer .footer-container .daiz-socials a i {
+  font-size: 2rem;
 }
 .footer .footer-container .daiz-socials a:hover {
   background-color: #e7e4fe;

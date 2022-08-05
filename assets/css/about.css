@@ -582,10 +582,16 @@ section {
   gap: 14px;
 }
 .footer .footer-container .daiz-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 6px;
-  border-radius: 50px;
+  border-radius: 48px;
   background-color: #fff;
   transition: 0.6s;
+}
+.footer .footer-container .daiz-socials a i {
+  font-size: 2rem;
 }
 .footer .footer-container .daiz-socials a:hover {
   background-color: #e7e4fe;
