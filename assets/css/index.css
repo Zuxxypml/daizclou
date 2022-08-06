@@ -47,7 +47,7 @@ h6 {
   font-family: "DM Sans";
 }
 .brand-color {
-  color: #8d4ecc;
+  color: #e76eff;
 }
 .daiz-btn {
   font-family: "Poppins", sans-serif;
@@ -342,7 +342,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #5846f9;
+  color: #8d4ecc;
 }
 
 /*  Hero Section  */
@@ -499,7 +499,7 @@ section {
 .about .about-service-wrapper .about-service-img {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 /* Services  */
@@ -702,7 +702,7 @@ section {
 }
 .hireus .container .row .hireus-img-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
