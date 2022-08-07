@@ -63,6 +63,7 @@ h6 {
   background-color: #8d4ecc;
   cursor: pointer !important;
   pointer-events: all;
+  width: max-content;
   border: none;
 }
 .daiz-btn:hover {

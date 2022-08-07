@@ -60,6 +60,7 @@ h6 {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
+  width: max-content;
   background-color: #8d4ecc;
   cursor: pointer !important;
   pointer-events: all;
@@ -80,6 +81,7 @@ h6 {
   border-radius: 200px;
   transition: 0.5s;
   margin-top: 30px;
+  width: max-content;
   color: #8d4ecc;
   background-color: #fff;
   cursor: pointer !important;
